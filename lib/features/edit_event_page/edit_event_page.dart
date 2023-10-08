@@ -100,16 +100,17 @@ class _EditEventPageState extends State<EditEventPage> {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          CustomAnimation(
-                            onTap: () => willExit(),
-                            child: Padding(
-                              padding: const EdgeInsets.all(16),
+                          const SizedBox(height: 32,),
+                          Padding(
+                            padding: const EdgeInsets.only(right: 16),
+                            child: CustomAnimation(
+                              onTap: () => willExit(),
                               child: SvgPicture.asset(
                                 AppIcons.back,
                                 alignment: Alignment.topLeft,
                               ),
-                            ), 
-                            ),
+                              ),
+                          ),
                             CustomTextField(
                               title: 'Event name',
                               maxLength: 50,

@@ -5,7 +5,7 @@ import '../model/event_model.dart';
 
 abstract class LocalDataSource {
   Future<List<EventModel>> getModels(String time);
-  Future<void> addModel(EventModel model);
+  Future<int> addModel(EventModel model);
   Future<List<int>> getFirst3EventsColorIndexes(String date);
   Future<void> deleteAnEvent(int id);
   Future<void> updateAnEvent(EventModel model);
@@ -24,8 +24,8 @@ class LocalDataSourceImpl implements LocalDataSource {
   }
   
   @override
-  Future<void> addModel(EventModel model) async {
-    await getIt<Database>().insert('events', model.toMap());
+  Future<int> addModel(EventModel model) async {
+   return await getIt<Database>().insert('events', model.toMap());
   }
   
   @override

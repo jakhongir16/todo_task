@@ -48,11 +48,15 @@ class CalendarBloc extends Bloc<CalendarEvent, CalendarState> {
     
     on<_AddEvent>((event, emit) async{
       final currentModels = state.models;
-      emit(state.copyWith(models: currentModels + [event.model]));
       final result = await _repository.addNewEvent(event.model);
+    
+      //emit(state.copyWith(models: currentModels + [event.model]));
       result.either((value) {
         event.onFailure(value.errorMessage);
-       }, (_) { 
+       }, (id) {
+        emit(state.copyWith(models:currentModels + [
+          event.model.copyWith(id: id)
+        ]));
         event.onSuccess();
        });
     });

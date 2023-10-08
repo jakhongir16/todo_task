@@ -5,7 +5,7 @@ import '../get_it.dart';
 import '../model/event_model.dart';
 
 abstract class HomeRepository {
-  Future<Either<StorageFailure, void>> addNewEvent(EventModel model);
+  Future<Either<StorageFailure, int>> addNewEvent(EventModel model);
   Future<Either<StorageFailure, List<EventModel>>> getEvents(String time);
   Future<Either<StorageFailure, List<int>>> getFirst3EventsColorIndexes(
     String date
@@ -18,10 +18,10 @@ abstract class HomeRepository {
 class HomeRepositoryImpl implements HomeRepository {
   
   @override
-  Future<Either<StorageFailure, void>> addNewEvent(EventModel model) async {
+  Future<Either<StorageFailure, int>> addNewEvent(EventModel model) async {
     try {
-      await getIt<LocalDataSource>().addModel(model);
-      return Right(null);
+      var id = await getIt<LocalDataSource>().addModel(model);
+      return Right(id);
     } catch (e) {
       return Left(StorageFailure(errorMessage: 'Unable to add'));
     }

@@ -43,6 +43,25 @@ class EventModel extends Equatable {
         colorIndex: map['colorIndex'] as int,
         );
     }
+   
+   
+   EventModel copyWith({int? id}){
+    return EventModel(
+      name: name,
+      colorIndex: colorIndex,
+      day: day,
+      description: description,
+      location: location,
+      time: time,
+      id: id ?? this.id,
+    );
+   }
+   
+   
+   
+   
+   
+   
     
     @override
     List<Object?> get props => [

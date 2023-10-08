@@ -16,14 +16,19 @@ abstract class AppConstants {
   ];
   
   static List<Color> lightColorsTodo = [
+    brightPink,
     blue,
     orange,
     red,
-    
+    green,
+    orange,
   ];
   static List<Color> darkColorsTodo = [
+    darkPink,
     darkBlue,
     darkOrange,
     darkRed,
+    darkGreen,
+    darkOrange,
   ];
 }

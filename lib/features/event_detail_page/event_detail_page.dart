@@ -218,7 +218,7 @@ class EventDetailPage extends StatelessWidget {
                 margin: const EdgeInsets.all(28),
                 borderRadius: 10,
                 height: 50,
-                color: brightPink,
+                color: pinkButtonColor,
                 onTap: () {
                   print("note Id : ${model.id}");
                   customShowDialog(

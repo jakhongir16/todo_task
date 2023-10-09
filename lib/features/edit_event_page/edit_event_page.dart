@@ -134,7 +134,7 @@ class _EditEventPageState extends State<EditEventPage> {
                           const CustomContainer(
                               margin: EdgeInsets.only(right: 13),
                               child: CustomTextWidget(
-                                textTitle: 'Priority color',
+                                text: 'Priority color',
                                 textStyle: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,

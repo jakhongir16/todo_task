@@ -57,6 +57,7 @@ class CalendarItem extends StatelessWidget {
                     ? null
                     : selectedMonthColor,
                    fontFamily: 'Poppins-Light',
+                   fontWeight: FontWeight.w500,
               ),
              ),
           ),

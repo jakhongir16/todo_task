@@ -14,9 +14,7 @@ import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/custom_container.dart';
 import '../../core/widgets/custom_show_dialog.dart';
 
-import '../../core/widgets/simple_custom_sizedbox.dart';
 import '../../core/widgets/custom_text_field.dart';
-import '../../core/widgets/custom_text_widget.dart';
 
 class EditEventPage extends StatefulWidget {
   const EditEventPage({super.key, required this.model});
@@ -134,9 +132,8 @@ class _EditEventPageState extends State<EditEventPage> {
                             ),
                           const CustomContainer(
                               margin: EdgeInsets.only(right: 13),
-                              child: CustomTextWidget(
-                                text: 'Priority color',
-                                textStyle: TextStyle(
+                              child: Text('Priority color',
+                                style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.w400,
                                   fontFamily: 'Roborto-Light',
@@ -144,7 +141,7 @@ class _EditEventPageState extends State<EditEventPage> {
                                 ),
                               ),
                           ),
-                          const SimpleCustomSizedBox(height: 6,),
+                          const SizedBox(height: 6,),
                           CustomContainer(
                             margin: const EdgeInsets.only(right: 13),
                             width: 75,

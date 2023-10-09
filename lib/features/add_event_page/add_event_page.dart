@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:todo_task/core/widgets/custom_text_widget.dart';
 
 import '../../core/bloc/calendar_bloc/calendar_bloc.dart';
 import '../../core/bloc/show_pop_up_bloc/show_pop_up_bloc.dart';
@@ -14,7 +13,6 @@ import '../../core/widgets/custom_animation.dart';
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/custom_container.dart';
 import '../../core/widgets/custom_show_dialog.dart';
-import '../../core/widgets/simple_custom_sizedbox.dart';
 import '../../core/widgets/custom_text_field.dart';
 
 class AddEventPage extends StatefulWidget {
@@ -139,9 +137,9 @@ class _AddEventPageState extends State<AddEventPage> {
                             ),
                               const CustomContainer(
                                   margin: EdgeInsets.only(left: 13),
-                                  child:  CustomTextWidget(
-                                   text: 'Priority color',
-                                  textStyle: TextStyle(
+                                  child:  Text(
+                                   'Priority color',
+                                  style: TextStyle(
                                     fontSize: 14,
                                     fontWeight: FontWeight.w400,
                                     fontFamily: 'Roborto-Light',
@@ -149,7 +147,7 @@ class _AddEventPageState extends State<AddEventPage> {
                                   ),
                                   ),
                               ),
-                              const SimpleCustomSizedBox(height: 6,),
+                              const SizedBox(height: 6,),
                               CustomContainer(
                                 margin: const EdgeInsets.only(left: 13),
                                 width: 75,

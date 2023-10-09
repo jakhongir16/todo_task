@@ -4,6 +4,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:todo_task/core/bloc/calendar_bloc/calendar_bloc.dart';
 import 'package:todo_task/core/constants/app_functions.dart';
 
+import '../../../core/constants/app_colors.dart';
 import '../../../core/constants/icons.dart';
 import '../../../core/widgets/custom_animation.dart';
 import '../../../core/widgets/custom_bottom_sheet.dart';
@@ -62,7 +63,8 @@ class HomeAppBar extends StatelessWidget {
                   AppFunctions.getDayOfWeek(selectedDate.weekday),
                   style: const TextStyle(
                     fontSize: 14, fontWeight: FontWeight.w600,
-                    fontFamily: 'Poppins-Regular'
+                    fontFamily: 'Poppins-Regular',
+                    color: selectedMonthColor,
                   ),
                 ),
                 Row(
@@ -72,7 +74,8 @@ class HomeAppBar extends StatelessWidget {
                       style: const TextStyle(
                         fontSize: 10,
                         fontWeight: FontWeight.w400,
-                        fontFamily: 'Poppins-Regular'
+                        fontFamily: 'Poppins-Regular',
+                        color: selectedMonthColor,
                       ),
                     ),
                     const SizedBox(width: 4,),

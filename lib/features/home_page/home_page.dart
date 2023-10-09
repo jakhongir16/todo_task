@@ -66,7 +66,7 @@ class HomePage extends StatelessWidget {
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
                           fontFamily: 'Poppins-Black',
-
+                          color: selectedMonthColor,
                          ),
                         ),
                         const Spacer(),

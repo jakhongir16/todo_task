@@ -13,9 +13,10 @@ import '../../core/widgets/custom_animation.dart';
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/custom_container.dart';
 import '../../core/widgets/custom_show_dialog.dart';
-import '../../core/widgets/custom_sized_box.dart';
+
+import '../../core/widgets/custom_sizedbox.dart';
 import '../../core/widgets/custom_text_field.dart';
-import '../../core/widgets/custom_text_widget.dart';
+import '../../core/widgets/custom_text.dart';
 
 class EditEventPage extends StatefulWidget {
   const EditEventPage({super.key, required this.model});
@@ -133,7 +134,7 @@ class _EditEventPageState extends State<EditEventPage> {
                             ),
                           const CustomContainer(
                               margin: EdgeInsets.only(right: 13),
-                              child: CustomTextWidget(
+                              child: CustomText(
                                 text: 'Priority color',
                                 textStyle: TextStyle(
                                   fontSize: 14,
@@ -143,7 +144,7 @@ class _EditEventPageState extends State<EditEventPage> {
                                 ),
                               ),
                           ),
-                          const CustomSizedBox(height: 6,),
+                          const CustomSizedBoxWidget(height: 6,),
                           CustomContainer(
                             margin: const EdgeInsets.only(right: 13),
                             width: 75,

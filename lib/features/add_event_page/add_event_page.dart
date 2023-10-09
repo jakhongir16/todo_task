@@ -13,9 +13,9 @@ import '../../core/widgets/custom_animation.dart';
 import '../../core/widgets/custom_button.dart';
 import '../../core/widgets/custom_container.dart';
 import '../../core/widgets/custom_show_dialog.dart';
-import '../../core/widgets/custom_sized_box.dart';
+import '../../core/widgets/custom_sizedbox.dart';
 import '../../core/widgets/custom_text_field.dart';
-import '../../core/widgets/custom_text_widget.dart';
+import '../../core/widgets/custom_text.dart';
 
 class AddEventPage extends StatefulWidget {
   const AddEventPage({super.key, required this.selectedDate});
@@ -139,7 +139,7 @@ class _AddEventPageState extends State<AddEventPage> {
                             ),
                               const CustomContainer(
                                   margin: EdgeInsets.only(left: 13),
-                                  child:  CustomTextWidget(
+                                  child:  CustomText(
                                    text: 'Priority color',
                                   textStyle: TextStyle(
                                     fontSize: 14,
@@ -149,7 +149,7 @@ class _AddEventPageState extends State<AddEventPage> {
                                   ),
                                   ),
                               ),
-                              const CustomSizedBox(height: 6,),
+                              const CustomSizedBoxWidget(height: 6,),
                               CustomContainer(
                                 margin: const EdgeInsets.only(left: 13),
                                 width: 75,

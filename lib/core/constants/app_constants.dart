@@ -21,7 +21,6 @@ abstract class AppConstants {
     orange,
     red,
     green,
-    orange,
   ];
   static List<Color> darkColorsTodo = [
     darkPink,
@@ -29,6 +28,5 @@ abstract class AppConstants {
     darkOrange,
     darkRed,
     darkGreen,
-    darkOrange,
   ];
 }

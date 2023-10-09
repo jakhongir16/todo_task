@@ -65,7 +65,8 @@ class HomePage extends StatelessWidget {
                          style: TextStyle(
                           fontSize: 14,
                           fontWeight: FontWeight.w600,
-                          fontFamily: 'Poppins-Black'
+                          fontFamily: 'Poppins-Black',
+
                          ),
                         ),
                         const Spacer(),

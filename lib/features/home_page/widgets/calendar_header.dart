@@ -29,7 +29,7 @@ class CalendarHeader extends StatelessWidget {
             children: [
               Text(
                 AppFunctions.getMonth(selectedMonth.month),
-                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600),
+                style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w600, color: selectedMonthColor, fontFamily: 'Poppins-BoldItalic'),
               ),
               const Spacer(),
               CustomButton(

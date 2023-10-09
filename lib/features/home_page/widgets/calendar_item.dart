@@ -51,11 +51,12 @@ class CalendarItem extends StatelessWidget {
                   ? white
                   : isPassed
                    ? isActiveMonth
-                    ? greyText
-                    : Colors.transparent
+                    ? selectedMonthColor
+                    : selectedMonthColor
                     : isActiveMonth
                     ? null
-                    : greyText,
+                    : selectedMonthColor,
+                   fontFamily: 'Poppins-Light',
               ),
              ),
           ),

@@ -35,7 +35,7 @@ class CustomTextField extends StatelessWidget {
         children: [
           Text(
             title,
-            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w400, fontFamily: 'Roborto-Light'),
+            style: const TextStyle(fontSize: 14, fontWeight: FontWeight.w400, fontFamily: 'Roborto-Light', color: anotherGrayColor),
           ),
           const SizedBox(height: 4,),
           TextField(

@@ -38,6 +38,7 @@ class CalendarBody extends StatelessWidget {
                 color: greyText,
                 fontSize: 12,
                 fontWeight: FontWeight.w500,
+                fontFamily: 'Poppins-Medium',
               ),
             );
           })),
